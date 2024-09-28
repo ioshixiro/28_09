@@ -1,0 +1,53 @@
+.clients_review {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+    h1 {
+        font-weight: 700;
+        font-size: 44px;
+        text-align: center;
+        color: #000000;
+    }
+}
+
+.review_cars_swiper {
+    width: 100%;
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img{
+    width: 29vw;
+    transition: width 0.3s;
+}
+
+@media(min-width: 280px){
+    .swiper-slide img{
+        width: 90vw !important;
+    }
+}
+@media(min-width: 550px){
+    .swiper-slide img{
+        width: 44vw !important;
+    }
+}
+@media(min-width: 1024px){
+    .swiper-slide img{
+        width: 29vw !important;
+    }
+}
